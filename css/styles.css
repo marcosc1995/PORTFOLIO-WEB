@@ -1,0 +1,83 @@
+h1 {
+  margin-bottom: 500px;
+}
+
+p {
+  margin-bottom: 250px;
+}
+
+@-webkit-keyframes example {
+  0% {
+    right: 0px;
+    top: 0px;
+    background-color: lawngreen;
+  }
+  25% {
+    right: 0px;
+    top: 200px;
+  }
+  50% {
+    top: 200px;
+    right: -300px;
+    background-color: blue;
+  }
+  75% {
+    top: 0px;
+    right: -300px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+    background-color: white;
+  }
+}
+
+@keyframes example {
+  0% {
+    right: 0px;
+    top: 0px;
+    background-color: lawngreen;
+  }
+  25% {
+    right: 0px;
+    top: 200px;
+  }
+  50% {
+    top: 200px;
+    right: -300px;
+    background-color: blue;
+  }
+  75% {
+    top: 0px;
+    right: -300px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+    background-color: white;
+  }
+}
+
+#test {
+  background-color: lawngreen;
+  font-size: 25px;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 600px;
+}
+
+#test:hover {
+  color: blue;
+}
+
+.active {
+  color: red;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+}
+/*# sourceMappingURL=styles.css.map */

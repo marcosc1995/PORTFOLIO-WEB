@@ -1,0 +1,74 @@
+h1 {
+  margin-bottom: 500px;
+}
+
+p {
+  margin-bottom: 250px;
+}
+
+@keyframes example {
+  0% {
+    right: 0px;
+    top: 0px;
+    background-color: lawngreen;
+    // left: 0px;
+  }
+  25% {
+    right: 0px;
+    top: 200px;
+    // left: 50px;
+  }
+  50% {
+    top: 200px;
+    right: -300px;
+    background-color: blue;
+    // left: 100px;
+  }
+  75% {
+    top: 0px;
+    right: -300px;
+    // left: 150px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    // left: 300px;
+  }
+  //   75% {
+  //     top: 0;
+  //     right: 100px;
+  //   }
+  //   85% {
+  //     right: -100px;
+  //   }
+  //   100% {
+  //     top: 0;
+  //     right: 0;
+  //   }
+}
+
+#test {
+  background-color: lawngreen;
+  font-size: 25px;
+  //   transition: all 3s ease-in;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 600px;
+  
+}
+#test:hover {
+  color: blue;
+}
+
+.active {
+  //   transform: scale(1.5);
+  //   background-color: yellow;
+  //   padding: 15px;
+  color: red;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+  position: relative;
+}
