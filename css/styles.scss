@@ -1,74 +1,102 @@
-h1 {
-  margin-bottom: 500px;
+body {
+  background-color: #4d4d46;
 }
 
-p {
-  margin-bottom: 250px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 100px 0;
+  padding: 0 50px 0 50px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  img:hover{
+    background-color: red;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 5px;
+    li {
+      margin: 10px;
+      font-size: 20px;
+      color: #eded93;
+      a {
+        text-decoration: none;
+        color: #b5b5a7;
+      }
+      a:hover{
+        color: #eded93;
+      }
+    }
+  }
 }
 
-@keyframes example {
-  0% {
-    right: 0px;
-    top: 0px;
-    background-color: lawngreen;
-    // left: 0px;
+.styled_presentation {
+  width: 800px;
+  margin: 200px auto 300px;
+  h3 {
+    color: #eded93;
+    margin: 0;
   }
-  25% {
-    right: 0px;
-    top: 200px;
-    // left: 50px;
+  h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #ebebd8;
   }
-  50% {
-    top: 200px;
-    right: -300px;
-    background-color: blue;
-    // left: 100px;
+  h2 {
+    font-size: 75px;
+    margin: 10px 0 0 0;
+    color: #b5b5a7;
   }
-  75% {
-    top: 0px;
-    right: -300px;
-    // left: 150px;
+  p {
+    color: #b5b5a7;
+    width: 500px;
+    font-size: 20px;
   }
-  100% {
-    top: 0px;
-    right: 0px;
-    background-color: white;
-    // left: 300px;
-  }
-  //   75% {
-  //     top: 0;
-  //     right: 100px;
-  //   }
-  //   85% {
-  //     right: -100px;
-  //   }
-  //   100% {
-  //     top: 0;
-  //     right: 0;
-  //   }
 }
-
-#test {
-  background-color: lawngreen;
-  font-size: 25px;
-  //   transition: all 3s ease-in;
-  width: 400px;
+.styled_about {
+  width: 800px;
   margin: auto;
-  margin-bottom: 600px;
-  
-}
-#test:hover {
-  color: blue;
+  display: flex;
+  h2 {
+    color: #ebebd8;
+  }
+  p {
+    color: #b5b5a7;
+    width: 500px;
+    font-size: 20px;
+  }
+  img {
+    height: 400px;
+    margin: 15px;
+    border: 1px solid #ebebd8;
+    border-radius: 5px;
+  }
+  img:hover{
+    box-shadow: 4px 4px 8px black;
+  }
 }
 
-.active {
-  //   transform: scale(1.5);
-  //   background-color: yellow;
-  //   padding: 15px;
-  color: red;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-
-  position: relative;
+.styled_projects {
+  width: 800px;
+  margin: 100px auto 100px;
+  display: flex;
+  h2 {
+    color: #ebebd8;
+  }
+}
+.styled_social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  ul {
+    list-style: none;
+    font-size: 40px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
