@@ -1,26 +1,47 @@
+const mask = document.getElementById("mask");
+const main = document.getElementById("mainBox");
+const site = document.getElementById("siteUnderConstruction");
+const hi = document.getElementById("hi");
+const nameTitle = document.getElementById('nameTitle');
+const title = document.getElementById('title');
+
+
+
 window.addEventListener('scroll', function () {
-    let content = document.querySelector('#test')
+    let content = document.querySelector('#siteUnderConstruction')
     let contentPosition = content.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight / 1.1;
+    let screenPosition = window.innerHeight / 1.3;
 
     if(contentPosition < screenPosition){
-        content.classList.add('active')
+        content.classList.remove('hidden')
+        content.classList.add('visible')
+
     }else{
-        content.classList.remove('active')
+        content.classList.remove('visible')
+        content.classList.add('hidden')
     }
 })
 
-let test = 'fifa'
-
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'rawg-video-games-database.p.rapidapi.com',
-		'X-RapidAPI-Key': '6150e4d77bmsh04abafa6114ef03p1ce7e0jsncc8a1386169e'
-	}
-};
-
-fetch('https://rawg-video-games-database.p.rapidapi.com/games?key=f62da0af1d41486894d3adad81cbd732&platforms=15&page_size=25', options)
-	.then(response => response.json())
-	.then(response => test = response)
-	.catch(err => console.error(err));
+function loadIntro() {
+  setTimeout(() => {
+    mask.classList.add("hidden");
+  }, 1500);
+  setTimeout(() => {
+    main.classList.remove("hidden");
+    main.classList.add("visible");
+    
+  }, 2000);
+  setTimeout(() => {
+    hi.classList.remove('hidden');
+    hi.classList.add('visible');
+  }, 2200);
+  setTimeout(() => {
+    nameTitle.classList.remove("hidden");
+    nameTitle.classList.add("visible");    
+  }, 2500);
+  setTimeout(() => {
+    title.classList.remove("hidden");
+    title.classList.add("visible");       
+  }, 2800);
+}
+loadIntro();
